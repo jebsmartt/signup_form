@@ -1,3 +1,49 @@
 * {
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-image: url(assets/hero_image_mountains.jpg);
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    
+    display: flex;
+}
+
+#left {
+    
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+#right {
+    background-color: white;
+    flex-shrink: 2;
+    flex-grow: 2;
+}
+
+#headline, #existingAccount {
+    padding-left: 40px;
+}
+
+
+#formBar {
+    padding-left: 40px;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+    padding-bottom: 16px;
+}
+
+.formRow label {
+    font-size: small;
+}

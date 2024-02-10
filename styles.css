@@ -6,6 +6,7 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 html, body {
     height: 100%;
 }
@@ -20,14 +21,25 @@ body {
     background-image: url(assets/hero_image_mountains.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     
-    flex-basis: 500px;
+    flex-basis: 30%;
     flex-shrink: 2;
     max-width: 500px;
     flex-grow: 1;
-    padding-top: 300px;
+    padding-top: 20vh;
 
 }
+
+#right {
+    background-color: var(--grey-color);
+    flex-shrink: 1;
+    flex-grow: 2;
+    padding-top: 20vh;
+    flex-basis: 70%;
+}
+
+
 
 #left div {
     width: 100%;
@@ -38,19 +50,13 @@ body {
 
     display: flex;
     justify-content: center;
-} */
+}
 
 #left div img {
-    width: 100px;
+    flex-basis: 100px;
     height: auto;
 }
 
-#right {
-    background-color: var(--grey-color);
-    flex-shrink: 1;
-    flex-grow: 2;
-    padding-top: 20vh;
-}
 
 #headline, #existingAccount {
     padding-left: 40px;
@@ -101,4 +107,25 @@ body {
 
 .formRow label {
     font-size: small;
+}
+
+
+@media screen and (max-width: 565px){
+    #left {
+        max-width: 565px;
+        flex-basis: 100%;
+        padding-top: 3rem;
+        height: 12rem;
+    }
+    
+    #right {
+        max-width: 565px;
+        flex-basis: 100%;
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+    }
+    
+    body {
+        flex-wrap: wrap;
+    }
 }
